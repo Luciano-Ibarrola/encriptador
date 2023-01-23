@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Desencriptador</title>
+</head>
+<body>
+        <header>Desencriptador - 1° Challenge Alura</header>
+    <br>
+    <div>
+        <h3>Instrucciones de uso</h3>
+        <p>- Ingrese el texto que desea encriptar/desencriptar en la caja de la izquierda.</p>
+        <p>- Considere no contenga letras con acento o caracteres especiales.</p>
+        <p>- El resultado aparecera en la caja derecha(Si desea copiar, puede utilizar el boton inferior, o seleccionar con el mouse) </p>
+
+    </div>
+    <div id="textos">
+        <textarea autofocus name="text" id="text" cols="30" rows="10" placeholder="-Ingrese el texto que desea encriptar/desencriptar" onkeypress="Enter(event)"></textarea>
+        <textarea name="text" id="resultado" cols="30" rows="10" disabled></textarea>
+    </div>
+    <br>
+    <div id="botones"> 
+        <input id="encriptar" ng-click="saveChat(comment)" type="button" value="Encriptar""></button>
+        <button id="desencriptar">Desencriptar</button>
+        <button id="copiar">Copiar</button>
+        <button id="limpiar">Limpiar</button>
+    </div>
+    <br>
+</body>
+<footer>&copy; Copyright - Luciano Ibarrola - 2023</footer>
+<script src="scriptFinal.js"></script>
+</html>
